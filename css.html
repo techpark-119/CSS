@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Document</title>
+    <style type="text/css">
+      div h1+p{
+        color: darkcyan;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inlinecss">
+      <h1 style="color: lawngreen">Inline CSS by three ways:</h1>
+      <h2 style="color: lawngreen">
+        Using CSS in ordered list wrapped in a div tag:
+      </h2>
+      <div>
+        <ol style="color: aqua; background-color: bisque">
+          <li>List Item 01</li>
+          <li>List Item 02</li>
+          <li>List Item 03</li>
+          <li>List itme 04</li>
+        </ol>
+      </div>
+      <h2 style="color: lawngreen">
+        Using CSS on individal list items and without the presence of div tag:
+      </h2>
+      <ol>
+        <li style="color: aqua; background-color: bisque">List Item 01</li>
+        <li style="color: aqua; background-color: bisque">List Item 02</li>
+        <li style="color: aqua; background-color: bisque">List Item 03</li>
+        <li style="color: aqua; background-color: bisque">List Item 04</li>
+      </ol>
+      <div>
+        <h2 style="color: lawngreen">
+          Using CSS on individal list items and with the presence of div tag:
+        </h2>
+        <ol>
+          <li style="color: aqua; background-color: bisque">List Item 01</li>
+          <li style="color: aqua; background-color: bisque">List Item 02</li>
+          <li style="color: aqua; background-color: bisque">List Item 03</li>
+          <li style="color: aqua; background-color: bisque">List Item 04</li>
+        </ol>
+      </div>
+      <h2 style="color: lawngreen">Using CSS on the div tag itself:</h2>
+      <div style="color: aqua; background-color: bisque">
+        <ol>
+          <li>List Item 01</li>
+          <li>List Item 02</li>
+          <li>List Item 03</li>
+          <li>List item 04</li>
+        </ol>
+      </div>
+      <h2 style="color: lightgreen">Conclusion:</h2>
+      <div style="background-color: lightskyblue; color: blueviolet">
+        <p>
+          1. The presence of a div tag does not make any effect to the web
+          structure and styling. It is only used for grouping of elements for
+          changing their styles by css. However, keep in mind, when we apply
+          css, to a div tag, it styles the div tag, not their individual
+          elements. For example, if we apply "display:none" to a div, when make
+          the div tag inline, but not the block elements inside it.The same goes
+          for span. And do not forget to NOT abuse both div and span when there
+          are alternative semanic tags available, bcause they are meant to be
+          generic, so use them only when nothing suits the job.
+        </p>
+        <p>
+          2. As said by "badhtml.com", and probably also other experienced
+          proffessionals, do not abuse this inline CSS as well. They are only
+          meant to be used when you have to give only some unique properties
+          abot a line that other tags don't need. Also use them when it is most
+          suitable than other alternatives like it makes the code shorter than
+          using it in external internal css and giving it a separate class/id.
+          And last, but not the least, it depends on where the css need to be
+          used to used to make done. In our case, the most suitable element
+          among these three elements is ol tag.
+        </p>
+      </div>
+    </div>
+    <div>
+    <h1>Internal CSS:</h1>
+    <p>This is Internal CSS. It's styles are applied through style tag in the head section.</p>
+    </div>
+    <h1>External CSS:</h1>
+    <p>This is External CSS. It's syles are applied through external file linked through link tag in the head section. </p>
+    <section>
+      <h1>Selectors:</h1>
+      <h2>1. * - Universal Selector:</h2>
+      <p>The universal selector is used to select all the elements of the entire webpage.
+      </p>
+      <h3>Syntax:</h3>
+      <p>* {<br><em>your code...</em><br>}
+      </p>
+      <h2>2. , - Type or Element Selector:</h2>
+      <p>Type or Element is used to select one or more than one elements by using their tag name. Tags are separated by commas.</p>
+      <h3>Syntax:</h3>
+      <p>h1, h2 {<br><em>your code...</em><br>}</p>
+      <h2>3. . - Class Selector:</h2>
+      <p>Class Selector is used to select elements by their Class Names.</p>
+      <h3>Syntax:</h3>
+      <p>.abc {<br><em>your code...<br></em>}</p>
+      <h2>4. # - ID Selector:</h2>
+      <p>ID Selector is used to select elements by their IDs.</p>
+      <h3>Syntax:</h3>
+      <p>#xyz {<br><em>your code...</em><br>}</p>
+      <h2>5. > - Child Selector:</h2>
+      <p>Child Selector is used to select the Direct Child of a particular Element.</p>
+      <h3>Syntax:</h3>
+      <p>div > p {<br><em>your code...</em><br>}</p>
+      <h2>6. <-space-> - Descendant Selector:</h2>
+      <p>Descendant Selector is used to select the  Descendants of a particular Element.</p>
+      <h3>Syntax:</h3>
+      <p>h1 p {<br><em>your code...</em><br>}</p>
+      <h2>7. + - Adjacent Sibling Selector:</h2>
+      <p>Adjacent Sibling selector is used to select the sibling that comes after the certain Element. It is used to select only one Element.</p>
+      <h3>Syntax:</h3>
+      <p>h1 + p {<br><em>your code...<br></em>}</p>
+      <h2>8. ~ - General Sibling Selector:</h2>
+      <p>General Sibling selector is used to select the general siblings that come after a certain element. It can be used to select one or more than one elements.</p>
+      <h3>Syntax:</h3>
+      <p>nav ~ a {<br> your code...<br>}</p>
+    </section>
+    <article>
+    <h2>There are three ways to specify colors:</h2>
+    <h3>1. Color Names:</h3>
+    <h4>Syntax:</h4>
+    <p>color: red;</p>
+    <h3>2. RGB( red, green, blue):</h3>
+    <h4>Syntax:</h4>
+    <p>color: rgb(255,0,0)</p>
+    <h3>3. Hex Code(#RRGGBB):</h3>
+    <h4>Syntax:</h4>
+    <p>color: #ff0000</p>
+    </article>
+    <article class="opacity">
+      <h3>There are two ways to express opacity of an Element:</h3>
+      <h4>1. RGBA (red, green, blue, alpha)</h4>
+      <p>color: (255,0, 0, 0.4)</p>
+      <h4>2. Opacity Property:</h4>
+      <p>opacity: 0.8</p>
+      <h2>HSL and HSLA:</h2>
+      <p>HSL and HSLA are also for specifying colors in CSS."h" stands for hue,"s" stands for saturation, and "l" stands for lightness. HSLA also adds another thing "a" that is called alpha, which means opacity.Also note that there is diffrence between lightness and brightness.</p>
+    </article>
+  </body>
+</html>
