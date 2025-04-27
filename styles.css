@@ -1,0 +1,17 @@
+body {
+    color: fuchsia;
+    background-color: lavender;
+}
+body > p {
+    background-color: royalblue;
+    color: floralwhite
+}
+section{
+    color: saddlebrown;
+}
+h3 + p{
+    color: seagreen;
+}
+.opacity{
+    color: #0005fc;
+}
